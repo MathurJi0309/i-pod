@@ -5,14 +5,6 @@ const Screen = (props) => {
 
   return (
     <div className="screen-container" id="screen-container">
-      <a href="https://github.com/mathurji0309" target="blank">
-        <img
-          id="git"
-          src="https://polcats.tech/VisualSort/images/github.png"
-          alt="gitImage"
-        />
-      </a>
-
       {/* if menu = true the show menu */}
       {menu ? (
         <div className="menu">
@@ -37,6 +29,7 @@ const Screen = (props) => {
       {/* if submenu = true the show submenu */}
       {!menu && submenu ? (
         <div className="menu">
+
           <span className="heading">Music</span>
           <ul className="menu-list" id="menu-list">
             <li id="allsong" className="">
